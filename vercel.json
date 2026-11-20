@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "framework": null,
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/map-config.js",
+      "destination": "/api/map-config"
+    }
+  ],
+  "functions": {
+    "api/route.js": {
+      "maxDuration": 60
+    },
+    "api/rent/analyze.js": {
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    }
+  ]
+}

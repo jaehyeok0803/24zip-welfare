@@ -1,0 +1,6 @@
+24.zip project
+1. Install Node.js.
+2. Copy .env.example to .env.local and supply your own keys.
+3. Run: node server.cjs
+4. Open http://localhost:8080
+Credentials, deployment caches and local logs are intentionally excluded.
